@@ -79,6 +79,24 @@ class _MockSocket:
     def makefile(self, mode, *args, **kwargs):
         return self._rfile if "r" in mode else self._wfile
 
+    def sendall(self, data):
+        self._wfile.write(data)
+
+    def send(self, data, flags=0):
+        return self._wfile.write(data)
+
+    def settimeout(self, timeout):
+        pass
+
+    def gettimeout(self):
+        return None
+
+    def setsockopt(self, level, opt, value):
+        pass
+
+    def shutdown(self, how):
+        pass
+
     def close(self):
         pass
 
