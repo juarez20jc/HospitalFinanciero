@@ -275,7 +275,7 @@ class HospitalHandler(BaseHTTPRequestHandler):
         self.end_headers()
 
     def serve_static(self, request_path):
-        rel = request_path.removeprefix("/assets/").replace("/", "\\")
+        rel = request_path.removeprefix("/assets/")
         target = (STATIC_DIR / rel).resolve()
         if not str(target).startswith(str(STATIC_DIR.resolve())) or not target.exists():
             self.send_error(404)
