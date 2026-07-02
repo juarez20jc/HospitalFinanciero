@@ -1,6 +1,4 @@
-# La app demo usa Python 3.12 o superior.
-# Pip instala las librerias faltantes y omite las que ya cumplen la version.
-PyMySQL>=1.1
+# SQLite es nativo de Python (no requiere instalacion).
 pywebview>=5.3
 reportlab>=4.2
 pandas>=2.2

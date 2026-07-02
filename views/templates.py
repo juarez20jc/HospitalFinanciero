@@ -713,7 +713,7 @@ def usuarios_paciente_view(user, pacientes):
 def configuracion_view(user):
     content = """
     <section class="dashboard-grid">
-      <article class="panel"><div class="panel-head"><h2>Conexión</h2><span>Producción</span></div><p>El proyecto utiliza <strong>database/schema_mysql.sql</strong> y <strong>database/seed_mysql.sql</strong> para trabajar con MySQL.</p></article>
+      <article class="panel"><div class="panel-head"><h2>Conexión</h2><span>Producción</span></div><p>El proyecto utiliza <strong>database/schema_sqlite.sql</strong> y <strong>database/seed_sqlite.sql</strong> para trabajar con SQLite.</p></article>
       <article class="panel"><div class="panel-head"><h2>Impuestos</h2><span>IGV</span></div><p>La facturación calcula IGV al 18% y numera comprobantes con formato FAC-AAAA-000001.</p></article>
       <article class="panel"><div class="panel-head"><h2>Clínica</h2><span>Marca temporal</span></div><p>Nombre de trabajo: Clínica Ana San Gabriel. El logo puede reemplazarse en assets/logos cuando esté aprobado.</p></article>
     </section>"""
