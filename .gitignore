@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.vscode/
+*.log
+*.sqlite
+*.sqlite-journal
+*.db
+*.db-journal
+qa/
+write_test.txt
+
+# Documentos
+*.docx
+rendered_informe/
+demo_datos_ampliados.sql
